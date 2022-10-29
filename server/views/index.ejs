@@ -2,15 +2,218 @@
 
 <%- include partials/main_nav.ejs %>
   
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="app.css">
+
+<style>
+
+html {
+height: 100%;
+margin: auto;
+
+
+}
+
+body{
+background-color:#F5F5F5;
+}
+
+
+
+h1, h2, h3, h4, h5{
+font-family: "Bitter", serif;
+}
+
+h6{
+font-family: "Bitter", serif;
+font-style: italic;
+text-align: center;
+}
+
+
+
+.card-space{
+transform: rotateY(-180deg);
+
+}
+
+.card-space:hover .card{
+transform: rotateY(-180deg);
+}
+
+.card{
+border-radius: 10px;
+height: 120px;
+margin: 10px;
+width: 800px;
+position:relative;
+transform-style: preserve-3d;
+transition: all duration ease;
+text-align: center;
+position: fixed;
+top: 50%;
+left: 50%;
+margin-left: -400px;
+margin-right: -400px;
+
+
+}
+
+.face{
+border-radius: 10px;
+box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.1);
+
+}
+
+.image1 {
+height: 50px;
+width: 50px;
+}
+.image2 {
+height: 400px;
+width: 800px;
+}
+
+.image3{
+height: 250px;
+width: 375px;
+}
+
+
+.image4{
+height: 300px;
+width: 230px;
+border-radius: 20%;
+display: inline-block;
+margin: 0px 120px;
+
+}
+
+
+table{
+border-spacing: 30px;
+width: 130%;
+
+}
+
+.table2{
+width:50%;
+margin-left: auto;
+margin-right: auto;
+}
+
+aside { 
+text-align: right; 
+}
+
+.row{
+text-align: left;
+}
+
+footer{
+position: fixed;
+}
+
+header{
+
+position: fixed;
+}
+
+.panel{
+background-color:#D3D3D3	;
+height: 55px;
+border: 1px solid;
+border-radius: 4px;
+}
+.contact{
+width:100%;
+}
+
+
+textarea {
+width: 100%;
+height: 50px;
+padding: 12px 20px;
+box-sizing: border-box;
+border: 2px solid #ccc;
+border-radius: 4px;
+background-color: #f8f8f8;
+font-size: 16px;
+resize: none;
+}
+
+input{
+border: 2px solid #ccc;
+border-radius: 4px;
+background-color: #f8f8f8;
+font-size: 16px;
+resize: none;
+}
+
+#register:hover{
+color:white;
+background-color: black;
+}
+
+#clear:hover{
+color:white;
+background-color: black;
+}
+
+.project{
+width:90%;
+margin-left: auto;
+margin-right: auto;
+}
+
+.nametag{
+text-align: center;
+margin-left:auto;
+margin-right:auto;
+}
+
+.about{
+text-align: left;
+}
+
+.name{
+text-align: center;
+}
+</style>
 
   <!-- Main Content -->
-  <main class="container">
-    <div class="jumbotron">
-      <h1 class="display-4">Welcome to the <%= title %> page</h1>
-      
+  <div class="container">
+    <div class="row">
+      <h1></h1>
+        <h1>Home Page</h1>
     </div>
-  </main>
+    <hr>
+    
+        
+      <div>
+        <h6>↓ Hover a mouse over to read ↓</h6>
+      </div>
+<br>
+         
+  </div>
+          <br>
+          <!-- A card that rolls and reveals text when cursor is over it-->
+
+<div class="card-space" >
+  <div class="card">
+    <div class="face front">
+      <h1>About this Assignment</h1>
+    </div>
+    <div class="face back">
+      <p>This Assignment was a good tool for me in order to be more professional with web design. It really feels like I did learn a lot of useful information that i can use later in my life.</p>
+    </div>
+  </div>
+  </div>
   
+        
+
+
 <%- include partials/bottom_nav.ejs %>  
 
 <%- include partials/footer.ejs %>

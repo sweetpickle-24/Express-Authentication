@@ -13,7 +13,7 @@ module.exports.displayInforList= (req,res,next)=>{
         else
         {
             //console.log(InforList);
-            res.render('infor/list',{title:"Business Contact List",
+            res.render('infor/list',{title:"Contact List",
             InforList:InforList,
             displayName: req.user ? req.user.displayName : '' });
         }

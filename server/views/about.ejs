@@ -1,20 +1,91 @@
+
 <%- include partials/header.ejs %>
 
 <%- include partials/main_nav.ejs %>
-  
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+
+html {
+height: 100%;
+margin: auto;
+}
+body{
+background-color:#F5F5F5;
+}
+h1, h2, h3, h4, h5{
+font-family: "Bitter", serif;
+}
+
+h6{
+font-family: "Bitter", serif;
+font-style: italic;
+text-align: center;
+}
+.image4{
+height: 300px;
+width: 230px;
+border-radius: 20%;
+display: inline-block;
+margin: 0px 120px;
+
+}
+.about{
+text-align: left;
+} 
+.hello{
+  padding-left: 50px;
+
+}
+
+.pdf{
+  margin-left: 50px;
+
+}
+.name{
+text-align: center;
+
+}
+</style>
 
   <!-- Main Content -->
-  <main class="container">
-    <div class="jumbotron">
-      <h1 class="display-4">Welcome to the <%= title %> page</h1>
-      
+  <div class="container">
+    <div class="row">
+      <h1></h1>
+
+        <h1>About Me</h1>
     </div>
-  </main>
+    <hr>
+    
+</div>
   
+
+<table class="table2">
+    <tr class="about">
+        <td class="hello">
+            <p>Hello, my name is Vladyslav and I am a student at Centennial College. Currently this is my third semester here. My major is AI, otherwise known as Artificial Intelligence. This assignment is from a COMP229 class which is about Web Aplication Development. I still have lots of things to learn, yet I can already see myself using my knowledge in different classes for fun or coriosity.</p>
+        </td>
+        <td>
+            
+        </td>
+        <td>
+            <img src="Assets/photo.jpg" alt="Photo" class="image4">
+            
+        </td>
+    </tr>
+    <tr>
+        <th>
+            <input class="pdf" type="reset" id="clear" value="PDF version of my resume">
+        </th>
+        <th class="name" colspan="2">Vladyslav Byelozerskykh</th>
+    </tr>
+</table>
+
+
 <%- include partials/bottom_nav.ejs %>  
 
 <%- include partials/footer.ejs %>
   
-
 
 
